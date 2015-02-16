@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+var person = 
+		{ 
+		name: "Michael",
+		distance_travelled: 0,
+		say_name: function(){alert(person.name)},
+		say_something: function(param){alert(person.name+" "+param)},
+		walk: function(){alert('walking'); person.distance +=3},
+		run: function(){alert('walking'); person.distance +=3},
+		crawl: function(){alert('crawling'); person.distance +=1},
+		do_something: function() {
+			var rand = Math.floor((Math.random() *3) +1);
+			console.log(rand);
+			
+			if (rand = 3){
+
+				person.walk();
+			}
+
+			else if (rand =2){
+				person.crawl();
+			}
+
+			else { 
+				person.crawl();
+			}
+		},
+		fly: function(x,y) {
+		 var rando = Math.floor((Math.random()*100)+0);
+		 console.log(rando);
+		 if (rando <=30){
+		 	alert(x);
+		 		 
+	 		}
+	 	else { alert(y)}; 
+			 
+		}
+	}
+	
+
+</script>
+</body>
+</html>

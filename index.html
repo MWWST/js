@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var name;
+		name= "Coding Dojo";
+		var place ="CD View";
+
+		var x=10,
+			y= 25,
+			z=10.63563;
+
+			console.log(x,y,z);
+
+		var dojo ={};
+		dojo = {
+			name: 'Coding Dojo',
+			number_students: 25,
+			instructions: ['Randall','Eylem'],
+			location :{
+				City: 'Mountain View',
+				State: 'CA',
+				Zipcode:'94043'
+			}
+		};
+
+		console.log(dojo);
+		dojo.number_students= 30;
+		dojo.location.City = 'San Jose';
+
+		function add (a,b){
+			var sum =a+b;
+			return sum;
+		}
+
+		console.log(add(3,5));
+
+		var object ={ 
+			name :"awesome object",
+			favorite_number: 3,
+			favorite_method:function(){
+				alert('I love to alert!')
+			}
+		}
+		object.favorite_method();
+
+		</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+var x =[3,5,'dojo','rocks',{name:'Michael',title:'Sensei'}]
+
+for (index in x) {
+	console.log(typeof(x[index])+" "+x[index]);
+
+}
+x.push(100);
+// console.log(x);
+x.push([1,3,5,7,9]);
+console.log(x);
+
+var sum=0
+for (var i=0;i<500;i++){
+	sum+=i;
+
+}
+// console.log(sum);
+
+
+	var d =new Date();
+	var n = d.getTime();
+	console.log(n);
+	var sum =0
+	for (var i=0;i<1000000;i++){
+		sum+=i;
+		console.log(sum);
+	}
+	var e =new Date();
+	var end = e.getTime();
+	console.log(end);
+	var duration = end-n;
+	console.log(duration);
+</script>
+</body>
+</html>
